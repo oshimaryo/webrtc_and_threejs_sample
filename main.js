@@ -19,7 +19,7 @@ function init() {
         preserveDrawingBuffer: true // to allow screenshot
     });
     renderer.setClearColorHex(0x000000, 1);
-    renderer.autoClear = false
+    renderer.autoClear = false;
     renderer.setSize(window.innerWidth, window.innerHeight);
     document.getElementById('container').appendChild(renderer.domElement);
 
@@ -93,7 +93,6 @@ function init() {
         }, cameraError)
         videoTexture = new THREE.Texture(video);
     }
-
     //  Otherwise we're provide an error message
     else {
         $('#allow').hide(500)
@@ -234,7 +233,6 @@ function animate() {
 
     // do the render
     render();
-
 }
 
 // render the scene
